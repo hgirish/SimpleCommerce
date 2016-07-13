@@ -10,7 +10,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		global.json = global.json
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SimpleCommerce", "src\SimpleCommerce\SimpleCommerce.xproj", "{9BB356F2-C317-4A52-86BA-288255D0F8EF}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SimpleCommerce.Web", "src\SimpleCommerce.Web\SimpleCommerce.Web.xproj", "{9BB356F2-C317-4A52-86BA-288255D0F8EF}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SimpleCommerce.Core", "Core\SimpleCommerce.Core\SimpleCommerce.Core.xproj", "{9D93BF30-2C86-4B61-855F-CD670B28AABE}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SimpleCommerce.Infrastructure", "Infrastructure\SimpleCommerce.Infrastructure\SimpleCommerce.Infrastructure.xproj", "{D8A2CBC4-8013-4D26-A40C-B608D8095C2B}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SimpleCommerce.Cms", "Modules\SimpleCommerce.Cms\SimpleCommerce.Cms.xproj", "{57EACB82-13F8-4209-BDB1-7E73547333EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,11 +28,26 @@ Global
 		{9BB356F2-C317-4A52-86BA-288255D0F8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BB356F2-C317-4A52-86BA-288255D0F8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BB356F2-C317-4A52-86BA-288255D0F8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D93BF30-2C86-4B61-855F-CD670B28AABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D93BF30-2C86-4B61-855F-CD670B28AABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D93BF30-2C86-4B61-855F-CD670B28AABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D93BF30-2C86-4B61-855F-CD670B28AABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8A2CBC4-8013-4D26-A40C-B608D8095C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8A2CBC4-8013-4D26-A40C-B608D8095C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8A2CBC4-8013-4D26-A40C-B608D8095C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8A2CBC4-8013-4D26-A40C-B608D8095C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57EACB82-13F8-4209-BDB1-7E73547333EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57EACB82-13F8-4209-BDB1-7E73547333EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57EACB82-13F8-4209-BDB1-7E73547333EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57EACB82-13F8-4209-BDB1-7E73547333EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9BB356F2-C317-4A52-86BA-288255D0F8EF} = {7674C191-8DFC-4E91-B32D-3C37A929D2E4}
+		{9D93BF30-2C86-4B61-855F-CD670B28AABE} = {7674C191-8DFC-4E91-B32D-3C37A929D2E4}
+		{D8A2CBC4-8013-4D26-A40C-B608D8095C2B} = {7674C191-8DFC-4E91-B32D-3C37A929D2E4}
+		{57EACB82-13F8-4209-BDB1-7E73547333EB} = {7674C191-8DFC-4E91-B32D-3C37A929D2E4}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,21 @@
+﻿@model HomeViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+@await Html.PartialAsync("_WidgetInstances", Model.WidgetInstances.Where(x => x.WidgetZoneId == WidgetZoneIds.HomeFeatured))
+
+@await Html.PartialAsync("_WidgetInstances", Model.WidgetInstances.Where(x => x.WidgetZoneId == WidgetZoneIds.HomeMainContent))
+
+@await Html.PartialAsync("_WidgetInstances", Model.WidgetInstances.Where(x => x.WidgetZoneId == WidgetZoneIds.HomeAfterMainContent))
+
+
+
+<div>
+    <h2 class="page-header">Sample Data</h2>
+    <h1>Delete all current catalog data and create sample cataglog</h1>
+    <form asp-action="""ResetToSample" asp-controller="SampleData" method="post">
+        <button type="submit" class="btn btn-danger">Do it!</button>
+    </form>
+</div>
