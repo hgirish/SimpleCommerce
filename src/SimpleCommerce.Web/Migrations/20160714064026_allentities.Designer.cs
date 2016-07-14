@@ -8,9 +8,10 @@ using SimpleCommerce.Core.Infrastructure.EntityFramework;
 namespace SimpleCommerce.Web.Migrations
 {
     [DbContext(typeof(SimpleDbContext))]
-    partial class SimpleDbContextModelSnapshot : ModelSnapshot
+    [Migration("20160714064026_allentities")]
+    partial class allentities
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.0-rtm-21431")

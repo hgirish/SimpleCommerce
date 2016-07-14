@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Reflection;
 using Autofac;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -73,6 +74,18 @@ namespace SimpleCommerce.Web
 
             builder.RegisterGeneric(typeof(Repository<>))
                 .As(typeof(IRepository<>));
+
+            builder.RegisterGeneric(typeof(RepositoryWithTypedId<,>)).As(typeof(IRepositoryWithTypedId<,>));
+            foreach (var module in GlobalConfiguration.Modules)
+            {
+                builder.RegisterAssemblyTypes(Assembly.Load(new AssemblyName(module.AssemblyName))).AsImplementedInterfaces();
+            }
+
+            builder.RegisterInstance(Configuration);
+            builder.RegisterInstance(hostingEnvironment);
+            //builder.RegisterMediaType(Configuration["Storage:StorageType"]);
+
+
             builder.Populate(services);
             var container = builder.Build();
             return container.Resolve<IServiceProvider>();
